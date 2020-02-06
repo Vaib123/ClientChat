@@ -1,4 +1,4 @@
-# ClientChat
+# Chat Application 
 **Basic Features :**
 
 1.Multiple clients can login at the same time.
