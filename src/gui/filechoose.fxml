@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller_FileChoose">
+   <children>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ProgressBar fx:id="progressbar" prefHeight="20.0" prefWidth="307.0" progress="0.0" />
+            <Label fx:id="label" text="No Files Selected" textFill="#a32626">
+               <font>
+                  <Font size="19.0" />
+               </font></Label>
+            <Button fx:id="open" mnemonicParsing="false" onAction="#OpenDialog" text="Show Open Dialog" textFill="#0a5b5b" />
+            <Button fx:id="save" mnemonicParsing="false" onAction="#SaveDialog" text="Show Save Dialog" textFill="#0f62d7" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <effect>
+            <Blend />
+         </effect>
+      </VBox>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>
